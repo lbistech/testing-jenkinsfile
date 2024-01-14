@@ -21,7 +21,7 @@ pipeline {
                 sh """
                 echo '--- This is my User input script ---'
                 ls -l
-		user_input.sh $FirstName $SecondName $Subject $Sports $Cert
+		./user_input.sh $FirstName $SecondName $Subject $Sports $Cert
                 date
                 """
             }
