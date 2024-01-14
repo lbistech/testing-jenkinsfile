@@ -20,7 +20,8 @@ pipeline {
             steps {
                 sh """
                 echo '--- This is my User input script ---'
-                /home/ubuntu/scripts/user_input.sh $FirstName $SecondName $Subject $Sports $Cert
+                ls -l
+		user_input.sh $FirstName $SecondName $Subject $Sports $Cert
                 date
                 """
             }
